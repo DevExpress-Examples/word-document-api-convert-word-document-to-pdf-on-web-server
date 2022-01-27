@@ -9,7 +9,7 @@
 * [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
 <!-- default file list end -->
-# Word Processing Document API - How to Convert a Word document in PDF format on a Web Server
+# Word Processing Document API - How to Convert a Word Document in PDF Format on a Web Server
 
 
 <p>This example demonstrates how to implement a Word-to-PDF converter with a web interface. A server-side <strong>RichEditDocumentServer </strong>component loads a file in a Word-like document format and converts it to PDF. The resulting file is sent to the client.</p>
