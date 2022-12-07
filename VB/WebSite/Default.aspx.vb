@@ -3,7 +3,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Web.UI
-Imports DevExpress.Web.ASPxUploadControl
+Imports DevExpress.Web
 Imports DevExpress.XtraRichEdit
 
 Partial Public Class _Default
@@ -31,7 +31,7 @@ Partial Public Class _Default
 		Page.Response.End()
 	End Sub
 
-	Protected Sub ASPxUploadControl_FileUploadComplete(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxUploadControl.FileUploadCompleteEventArgs)
+	Protected Sub ASPxUploadControl_FileUploadComplete(ByVal sender As Object, ByVal e As DevExpress.Web.FileUploadCompleteEventArgs)
 		Dim uploadControl As ASPxUploadControl = CType(sender, ASPxUploadControl)
 		Dim uploadedFile As UploadedFile = uploadControl.UploadedFiles(0)
 		e.CallbackData = Request.Url.AbsoluteUri.Replace(Request.Url.Query, String.Empty) + String.Format("?loadFile={0}", uploadedFile.FileName)

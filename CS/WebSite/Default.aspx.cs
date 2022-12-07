@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Web.UI;
-using DevExpress.Web.ASPxUploadControl;
+using DevExpress.Web;
 using DevExpress.XtraRichEdit;
 
 public partial class _Default : Page {
@@ -26,7 +26,7 @@ public partial class _Default : Page {
 		Page.Response.End();
 	}
 
-	protected void ASPxUploadControl_FileUploadComplete(object sender, DevExpress.Web.ASPxUploadControl.FileUploadCompleteEventArgs e) {
+	protected void ASPxUploadControl_FileUploadComplete(object sender, DevExpress.Web.FileUploadCompleteEventArgs e) {
 		ASPxUploadControl uploadControl = (ASPxUploadControl)sender;
 		UploadedFile uploadedFile = uploadControl.UploadedFiles[0];
 		e.CallbackData = Request.Url.AbsoluteUri.Replace(Request.Url.Query, String.Empty) + String.Format("?loadFile={0}", uploadedFile.FileName);
