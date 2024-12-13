@@ -1,5 +1,4 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128608242/13.1.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3240)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
@@ -7,7 +6,10 @@
 
 # Word Processing Document API - How to Convert a Word Document in PDF Format on a Web Server
 
-This example demonstrates how to implement a Word-to-PDF converter with a web interface. A server-side **RichEditDocumentServer** component loads a file in a Word-like document format and converts it to PDF. The resulting file is sent to the client.
+This example demonstrates how to implement a Word-to-PDF converter with a web interface. A server-side **RichEditDocumentServer** component loads a file in a Word-like format and converts it to PDF. The resulting file is sent to the client.
+
+> [!Important]  
+> The Universal Subscription or an additional Office File API Subscription is required to use this example in production code. For pricing information, please refer to the [DevExpress Subscription](https://www.devexpress.com/Subscriptions/) page. 
 
 # Files to Review
 
